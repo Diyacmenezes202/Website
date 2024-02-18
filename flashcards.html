@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center the content horizontally */
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+    }
+
+    .menu-item {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 14px 16px;
+    }
+
+    .menu-item:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .columns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 85%; /* Adjust the width as needed */
+    }
+
+    #profileContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center content horizontally in the column */
+    }
+
+    #profileImage {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%; /* Create a circular frame */
+      overflow: hidden;
+      margin-bottom: 30px; /* Add margin between image and info */
+      margin-top: 20px;
+      
+    }
+
+    #profileImage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #profileInfo {
+      text-align: left;
+      margin-top: 30px; /* Add margin between image and info */
+      font-size: medium;
+      
+
+    }
+
+    #profileInfo p {
+      margin: 5px 0;
+    }
+
+    #socialIcons {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+     
+    }
+
+    #socialIcons img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    /* Card Styles */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-top: 10px; /* Add margin between profile info and cards */
+      margin-left: 90px;
+    }
+
+    .card {
+      width: 200px;
+      height: 150px;
+      background-color: #0c0c0c;
+      color: #ddd;
+      border-radius: 25px;
+      margin: 40px;
+      transition: transform 0.5s, box-shadow 0.5s;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 36px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-content {
+      padding: 10px;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .message {
+      text-align: center;
+      font-style: italic;
+      margin-left: 250px;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="home.html" class="menu-item">Home</a>
+    <a href="achievements.html" class="menu-item">Achievements</a>
+    <a href="experiences.html" class="menu-item">Experiences</a>
+  </div>
+  <div class="message">
+    <h1>Skills</h1>
+  </div>
+  <div class="columns">
+    <div id="profileContainer">
+      <div id="profileImage">
+        <img src="profile.jpg" alt="Profile Image">
+      </div>
+
+      <div id="profileInfo">
+      <p><b>Name :</b> Diya Crystal Menezes</p>
+      <p><b>Phone No :</b> 6360559776</p>
+      <p><b>Email ID :</b> diyacmenezes202@gmail.com</p>
+      </div>
+
+      <div id="socialIcons">
+        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><img src="linkedIn.png" alt="LinkedIn"></a>
+        <a href="https://github.com/your-github-username" target="_blank"><img src="Github.png" alt="GitHub"></a>
+        <a href="https://www.instagram.com/your-instagram-profile" target="_blank"><img src="Instagram.jpg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/your-facebook-profile" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com/your-twitter-handle" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+
+    
+    
+    <div class="card-container">
+      
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-content">
+          <h3>
+          <p>C</p>
+          <p>C++</p>  
+          <p>Java</p>
+          </h3>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-content">
+          <h3>
+          <p>Python</p>
+          <p>Power BI</p>
+          <p>MY SQL</p>
+          </h3>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card-content">
+          <h3>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>PHP</p>
+          </h3>
+        </div>
+      </div>
+
+  
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="card-content">
+          <h3>
+          <p>Quick learner</p></h3>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="card-content">
+          <h3>
+          <p>Good communication skills</p></h3>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="card-content">
+          <h3>
+          <p>Good leader</p></h3>
+        </div>
+      </div>
+
+     
+    </div>
+  </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 400px;
+            height: 300px;
+            perspective: 1000px;
+            margin: 10px;
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            background-color: #0a0a0a;
+            color: #ccc;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .card-back {
+            transform: rotateY(180deg);
+        }
+
+        .back-button {
+            margin-top: 80px;
+            padding: 10px 20px;
+            background-color: #060606;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Experiences</h1>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-face">
+                    <p><b>INFOTHON HACKATHON</b></p>
+                </div>
+                <div class="card-face card-back">
+                    <p>Participated in a 12hrs hackathon conducted by our department of ISE. Was a great experience and it was my first hackathon and obtained many valuable insights.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-face">
+                    <p><b>HACKSPRINT HACKATHON</b></p>
+                </div>
+                <div class="card-face card-back">
+                    <p>Participated in a 24hrs hackathon conducted by PES college of engineeering mandya. A truly exciting hackathon that taught me the importance of working in a team and to keep my spirits high while completing a task.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-face">
+                    <p><b>U & I VOLUNTEERING</b></p>
+                </div>
+                <div class="card-face card-back">
+                    <p>I volunteered in an NGO where I taught the children subjects they found it difficult to manage especially English as they were from kannada medium schools. It was a great experience of being a teacher to young minds and encouraging them towards their goal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="flashcards.html" class="back-button">Back</a>
+</body>
+</html>
